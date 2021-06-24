@@ -1,0 +1,100 @@
+board:
+  buy_url_cn: https://fire-stm32.taobao.com/
+  buy_url_global: https://fire-stm32.taobao.com/
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: Overbearing STM32F103 is a development board based on the ARM Cortex-M3
+    core launched by Wildfire, with a maximum clock speed of 72Mhz. The development
+    board has a wealth of on-board resources and can give full play to the chip performance
+    of STM32F103.
+  description_zh: 霸道 STM32F103 是野火推出的一款基于 ARM Cortex-M3 内核的开发板，最高主频为 72Mhz，该开发板具有丰富的板载资源，可以充分发挥
+    STM32F103 的芯片性能。
+  emulator_machine: ''
+  large_image: documents/images/board.png
+  name: stm32f103-fire-arbitrary
+  price_cn: 476 CNY
+  price_global: 73.45 USD
+  sale_contact_cn: http://embedfire.com/
+  sale_contact_global: http://embedfire.com/
+  small_image: documents/images/board_gaitubao_200x121.png
+  vendor: embedfire
+  version: 1.0.0
+chip:
+  chip_name: STM32F103ZET6
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F1
+  source_freq: '8000000'
+  sub_series_name: 'STM32F103 '
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: sheet
+  file: documents/stm32f103ze.pdf
+  title: stm32f103ze
+example_projects: []
+features:
+- 'MCU: STM32F103ZET6, clocked at 72MHz, 512KB FLASH, 64KB RAM'
+- 'External RAM: IS62WV51216BLL (SRAM, 1MB)'
+- 'External FLASH: W25Q64 (SPI, 8MB)'
+- 'LED: 1 RGB light; 2 ordinary LEDs, D4 (blue, PF7), D5 (blue, PF8)'
+- 'Buttons: 2, K1 (both with wake-up function, PA0), K2 (PC13)'
+- 'Common interfaces: USB to serial port, SD card interface, Ethernet interface, LCD
+  interface'
+- Debug interface, standard JTAG/SWD
+features_zh:
+- MCU：STM32F103ZET6，主频 72MHz，512KB FLASH ，64KB RAM
+- 外部 RAM：IS62WV51216BLL（SRAM，1MB）
+- 外部 FLASH：W25Q64（SPI，8MB）
+- LED：1个RGB灯；2个普通LED，D4（蓝色，PF7），D5（蓝色，PF8）
+- 按键：2个，K1（兼具唤醒功能，PA0），K2（PC13）
+- 常用接口：USB 转串口、SD 卡接口、以太网接口、LCD 接口
+- 调试接口，标准 JTAG/SWD
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvoptx
+    - project.uvproj
+    - project.uvprojx
+    - README.md
+    - rt-thread
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvoptx
+    - template.uvproj
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files: []
+  project_description: ''
+  project_name: stm32f103-fire-arbitrary
+  project_type: rt-thread|@full|@4.0.3
+yaml_version: 3
