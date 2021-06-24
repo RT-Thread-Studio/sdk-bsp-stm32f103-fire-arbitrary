@@ -11,7 +11,7 @@ board:
     STM32F103 的芯片性能。
   emulator_machine: ''
   large_image: documents/images/board.png
-  name: stm32f103-fire-arbitrary
+  name: STM32F103-FIRE-ARBITRARY
   price_cn: 476 CNY
   price_global: 73.45 USD
   sale_contact_cn: http://embedfire.com/
